@@ -51,7 +51,7 @@ function initializeScene() {
     pyramidMesh = new THREE.Mesh(pyramidGeometry, pyramidMaterial);
     pyramidMesh.position.set(-1.5, 0.0, 4.0);
     scene.add(pyramidMesh);
-    
+
     // Create box
     var boxGeometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
 
@@ -63,9 +63,9 @@ function initializeScene() {
         new THREE.MeshBasicMaterial({color: 0x00FFFF}),
         new THREE.MeshBasicMaterial({color: 0xFFFFFF})
     ];
-    
+
     var boxMaterial = new THREE.MeshFaceMaterial(boxMaterials);
-    
+
     boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
     boxMesh.position.set(1.5, 0.0, 4.0);
     scene.add(boxMesh);
